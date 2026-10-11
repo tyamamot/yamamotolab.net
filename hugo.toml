@@ -65,3 +65,6 @@ disableKinds = ["taxonomy", "term"]
   [[params.sideLinks]]
     name = "兵庫県立大学 社会情報科学部"
     url = "https://www.u-hyogo.ac.jp/sis/"
+
+[services.googleAnalytics]
+  ID = "G-JW8T1PY22G"   # GA4 測定ID（山本研究室 - GA4 プロパティ）

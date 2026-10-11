@@ -8,6 +8,7 @@
   {{ $css := slice (resources.Get "css/main.css") }}
   {{ with site.Params.design }}{{ with resources.Get (printf "css/design-%s.css" .) }}{{ $css = $css | append . }}{{ end }}{{ end }}
   {{ with $css | resources.Concat "css/site.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+  {{- if hugo.IsProduction }}{{ with site.Config.Services.GoogleAnalytics.ID }}{{ partial "google_analytics.html" $ }}{{ end }}{{ end }}
 </head>
 <body class="{{ with site.Params.design }}design-{{ . }}{{ end }}{{ if .IsHome }} is-home{{ end }}">
   {{ partial "header.html" . }}
