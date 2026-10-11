@@ -3,3 +3,6 @@ resources/
 .hugo_build.lock
 .DS_Store
 __pycache__/
+
+# 引き継ぎメモ（旧サーバ構成などを含むので公開しない）
+CLAUDE.md
