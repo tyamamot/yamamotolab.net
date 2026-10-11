@@ -54,6 +54,7 @@ disableKinds = ["taxonomy", "term"]
   affiliation = "兵庫県立大学 大学院情報科学研究科 / 社会情報科学部"
   address = "〒651-2197 神戸市西区学園西町8丁目2-1 兵庫県立大学 神戸商科キャンパス 情報科学研究棟"
   mapEmbed = "https://www.google.com/maps/d/embed?mid=1JwS1HgQVvrl06yKeqL14qDn1tB9rdW8_&ehbc=2E312F"
+  accessUrl = "https://www.u-hyogo.ac.jp/about/access/kobeshoka/"   # 大学のアクセス案内（トップの「アクセスマップ」）
   contactName = "山本岳洋"
   contactUrl = "https://rerank-lab.org/"
   [[params.sideLinks]]

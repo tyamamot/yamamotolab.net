@@ -5,7 +5,7 @@ title: "アクセス"
 ## 交通アクセス
 
 〒651-2197 神戸市西区学園西町8丁目2-1  
-兵庫県立大学 神戸商科キャンパス 情報科学研究棟（[アクセスマップ](https://www.u-hyogo.ac.jp/campuslife/access/campus01.html)）
+兵庫県立大学 神戸商科キャンパス 情報科学研究棟（[アクセスマップ](https://www.u-hyogo.ac.jp/about/access/kobeshoka/)）
 
 - 神戸市営地下鉄西神･山手線「学園都市駅」下車　徒歩10分
 - 山陽新幹線新神戸駅から市営地下鉄で25分
