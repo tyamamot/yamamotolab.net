@@ -1,0 +1,22 @@
+{{/*
+  研究成果 {{< publications >}}。data/publications.yaml（項目の書式は rerank-lab.org と同じ）から生成する。
+  ・date から年度（4月始まり）を計算して年度ごとに表示
+  ・年度の中は date の新しい順。1件の表示は _partials/pubitem.html（rerank-lab.org と共通）
+*/}}
+{{- $items := slice -}}
+{{- range hugo.Data.publications }}
+  {{- $d := split (string .date) "-" -}}
+  {{- $y := int (index $d 0) -}}
+  {{- $m := cond (gt (len $d) 1) (int (strings.TrimLeft "0" (index $d 1))) 4 -}}
+  {{- $fy := cond (lt $m 4) (sub $y 1) $y -}}
+  {{- $items = $items | append (merge . (dict "fy" $fy "date" (string .date))) -}}
+{{- end -}}
+{{- range (sort (uniq (apply $items "index" "." "fy")) "value" "desc") }}
+{{- $fy := . }}
+<h3>{{ $fy }}年度</h3>
+<ol class="publist">
+  {{- range sort (where $items "fy" $fy) "date" "desc" }}
+  <li>{{ partial "pubitem.html" (dict "e" . "lang" "ja") }}</li>
+  {{- end }}
+</ol>
+{{- end }}

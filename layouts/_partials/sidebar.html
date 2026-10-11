@@ -1,0 +1,20 @@
+{{ $news := where site.RegularPages "Section" "posts" }}
+{{ with $news }}
+<section class="side-box">
+  <h3>{{ i18n "recentNews" }}</h3>
+  <ul class="side-news">
+  {{ range first site.Params.recentNews .ByDate.Reverse }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a><time>{{ .Date.Format "2006-01-02" }}</time></li>
+  {{ end }}
+  </ul>
+  <p class="more"><a href="{{ (site.GetPage "/posts").RelPermalink }}">{{ i18n "allNews" }}</a></p>
+</section>
+{{ end }}
+{{ with site.Params.sideLinks }}
+<section class="side-box">
+  <h3>{{ i18n "links" }}</h3>
+  <ul class="side-links">
+  {{ range . }}<li><a href="{{ .url }}">{{ .name }}</a></li>{{ end }}
+  </ul>
+</section>
+{{ end }}

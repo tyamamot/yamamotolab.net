@@ -1,0 +1,159 @@
+:root {
+  --bg: #ffffff; --fg: #1f2328; --muted: #656d76; --line: #e5e7eb;
+  --accent: #1d4ed8; --accent-soft: #eef2ff; --award: #0066ff;
+  /* 旧サイトのフォント（Helvetica Neue / Arial）＋日本語はヒラギノ角ゴ等 */
+  --font: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", Meiryo, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0f1115; --fg: #e6e6e6; --muted: #9aa4b2; --line: #2a2f3a;
+          --accent: #8ab4ff; --accent-soft: #1a2233; --award: #6aa8ff; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font);
+       font-size: 16px; line-height: 1.8; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+/* header */
+.site-header { border-bottom: 1px solid var(--line); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 18px; }
+.site-name { font-weight: 700; font-size: 1.15rem; color: var(--fg); }
+.lang { display: flex; gap: 4px; font-size: .85rem; }
+.lang a, .lang .cur { padding: 2px 10px; border-radius: 999px; border: 1px solid var(--line); }
+.lang .cur { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.lang a.missing { opacity: .55; }
+.nav { display: flex; flex-wrap: wrap; gap: 4px 18px; padding-top: 10px; padding-bottom: 10px; font-size: .95rem; }
+.nav a { color: var(--muted); padding: 2px 0; border-bottom: 2px solid transparent; }
+.nav a:hover { color: var(--fg); text-decoration: none; }
+.nav a.active { color: var(--fg); border-bottom-color: var(--accent); }
+
+main.wrap { padding-top: 28px; padding-bottom: 48px; }
+
+/* profile */
+.profile { display: flex; gap: 28px; align-items: flex-start; justify-content: space-between;
+           padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+.profile h1 { margin: 0 0 8px; font-size: 1.8rem; }
+.profile p { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.7; }
+.profile-photo { width: 150px; height: auto; border-radius: 8px; flex-shrink: 0; }
+@media (max-width: 600px) {
+  .profile { flex-direction: column-reverse; }
+  .profile-photo { width: 120px; }
+}
+
+/* news */
+.recent h2, .content h2, .content h3 { font-size: 1.2rem; margin: 2em 0 .6em; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+.content h4 { font-size: 1.05rem; margin: 1.6em 0 .4em; }
+.newslist { list-style: none; padding: 0; margin: 0; }
+.newslist li { display: flex; gap: 16px; padding: 6px 0; border-bottom: 1px dashed var(--line); }
+.newslist time { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; font-size: .9rem; padding-top: 2px; }
+@media (max-width: 600px) { .newslist li { flex-direction: column; gap: 0; } }
+.more { text-align: right; margin: 8px 0 0; font-size: .9rem; }
+.year { color: var(--muted); }
+.date { color: var(--muted); margin-top: -8px; }
+
+/* content */
+.content h1 { font-size: 1.6rem; margin: 0 0 16px; }
+.content ol, .content ul { padding-left: 1.6em; }
+.content li { margin: .5em 0; }
+.content em { font-style: normal; font-weight: 600; }          /* 論文タイトルなど */
+.content mark { background: none; color: var(--award); font-weight: 600; }  /* ==受賞== */
+
+/* compact: 業績リストなど（front matter に compact: true）。旧サイトの .publication のスタイルを踏襲 */
+.compact { --pub-link: #2098a8; }
+@media (prefers-color-scheme: dark) { .compact { --pub-link: #4cc3d3; } }
+.compact .body { font-size: 1rem; line-height: 1.7; }
+.compact .body h3 { font-size: 1.44rem; font-weight: 700; margin: 35px 0 20px; padding-bottom: 4px; border-bottom: 5px solid var(--line); }
+.compact .body ol, .compact .body ul { padding-left: 40px; margin: 16px 0; }
+.compact .body li { font-size: 14px; line-height: 1.4; margin: 10px 0 0; }
+.compact .body strong { font-weight: normal; text-decoration: underline; }   /* 自分の名前: 下線 */
+.compact .body em { font-weight: bold; font-style: normal; }                 /* 論文タイトル: 太字 */
+.compact .body mark { font-weight: bold; color: var(--award); }              /* 受賞: 青の太字 */
+.compact .body a { color: var(--pub-link); text-decoration: underline; }
+.compact .body .links a { color: var(--muted); text-decoration: none; }     /* プロフィールリンクのボタンはトップと同じ見た目 */
+.compact .body .links a:hover { color: var(--accent); }
+.compact .body .links { padding-left: 0; margin: 0 0 8px; }
+.compact .body .links li { margin: 0; font-size: inherit; }
+.content table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8em 0 1.6em; }
+.content th { background: var(--accent-soft); text-align: left; font-weight: 600; }
+.content td:first-child, .content th:first-child { white-space: nowrap; width: 1%; }
+@media (max-width: 600px) { .content table { display: block; overflow-x: auto; } }
+.content td, .content th { border: 1px solid var(--line); padding: 6px 10px; vertical-align: top; }
+.content img { max-width: 100%; height: auto; }
+
+.site-footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; padding: 20px 0 32px; }
+
+/* shared additions */
+.links { list-style: none; padding: 0; margin: 10px 0 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.links a { display: inline-block; font-size: .8rem; padding: 1px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); }
+.links a:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
+
+/* layout scaffolding (sidebar is shown only in design-sidebar) */
+.sidebar { display: none; }
+.crumbs { font-size: .82rem; color: var(--muted); display: flex; gap: 6px; margin-bottom: 6px; }
+.crumbs a { color: var(--muted); }
+.page-head { margin-bottom: 8px; }
+
+/* ===== 研究室サイト: 緑のアクセント ===== */
+:root { --accent: #4d7c0f; --accent-soft: #f0f7e6; --award: #b45309; }
+@media (prefers-color-scheme: dark) { :root { --accent: #a3d65c; --accent-soft: #1b2414; --award: #f5b25a; } }
+.site-name { font-size: 1.3rem; }
+.hero { margin: 0 0 20px; }
+.hero img { width: 100%; border-radius: 8px; border: 1px solid var(--line); }
+.content img { border-radius: 4px; }
+.content iframe { max-width: 100%; border: 0; border-radius: 8px; }
+
+/* 研究紹介のカード一覧 */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; margin-top: 16px; }
+.card { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; color: var(--fg); background: var(--bg); transition: box-shadow .15s, transform .15s; }
+.card:hover { text-decoration: none; box-shadow: 0 4px 14px rgba(0,0,0,.08); transform: translateY(-2px); }
+.card-img { aspect-ratio: 16 / 9; background: var(--accent-soft) center / cover no-repeat; border-bottom: 1px solid var(--line); }
+.card-title { padding: 10px 12px 2px; font-weight: 600; font-size: .95rem; line-height: 1.5; }
+.card time { padding: 0 12px 12px; color: var(--muted); font-size: .8rem; }
+
+/* メンバー */
+.members h3 { margin-top: 1.6em; }
+.member-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 6px 18px; }
+.member-list li { margin: 0; padding: 6px 0; border-bottom: 1px dashed var(--line); }
+.member-list .en { color: var(--muted); font-size: .85rem; margin-left: .4em; }
+
+/* 研究成果（旧サイトの体裁を踏襲: 著者 / 太字タイトル / 掲載先） */
+.publist { padding-left: 1.4em; }
+.publist li { font-size: 14px; line-height: 1.5; margin: 10px 0 0; }
+.publist em { font-style: normal; font-weight: bold; }
+
+/* ===== トップページ（全デザイン共通の骨組み） ===== */
+.is-home .sidebar { display: none !important; }
+.is-home .layout { display: block; }
+body { overflow-x: hidden; }
+.btn { display: inline-block; padding: 10px 20px; border-radius: 999px; border: 1.5px solid var(--accent); color: var(--accent); font-weight: 600; font-size: .95rem; }
+.btn:hover { text-decoration: none; background: var(--accent-soft); }
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: var(--accent); filter: brightness(1.08); }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 0; }
+.hero-kicker { color: var(--accent); font-weight: 600; font-size: .9rem; margin: 0 0 6px; letter-spacing: .02em; }
+.hero h1 { margin: 0; font-size: 2.2rem; line-height: 1.3; }
+.hero-tagline { font-size: 1.15rem; font-weight: 600; margin: 10px 0 0; }
+.hero-lead p { margin: 14px 0 0; }
+.hero-photo { display: none; }
+.home-sec { margin-top: 48px; }
+.sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 14px; border-bottom: 3px solid var(--line); }
+.sec-head h2 { margin: 0; padding-bottom: 6px; font-size: 1.3rem; }
+.sec-head a { font-size: .9rem; }
+.join-band { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; background: var(--accent-soft); border-radius: 12px; padding: 28px 32px; }
+.join-band h2 { margin: 0 0 6px; font-size: 1.25rem; }
+.join-band p { margin: 0; }
+.btn-invert { background: var(--accent); color: #fff; }
+.access-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 24px; align-items: start; }
+.access-grid iframe { width: 100%; aspect-ratio: 4 / 3; border: 0; border-radius: 10px; }
+@media (max-width: 800px) { .access-grid { grid-template-columns: 1fr; } .hero h1 { font-size: 1.8rem; } }
+.card-img.noimg { background: linear-gradient(135deg, var(--accent-soft), var(--line)); }
+.home .cards { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 800px) { .home .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .home .cards { grid-template-columns: 1fr; } }
+/* スマホではメニューを横スクロール1行に */
+@media (max-width: 700px) { .site-header .nav, .nav { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; } .nav a { flex: none; } }
+.intro h1 { margin: 0; font-size: 2rem; line-height: 1.3; }
+.intro .hero-tagline { color: var(--accent); }
+.intro { padding-bottom: 8px; }

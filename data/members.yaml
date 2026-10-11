@@ -1,0 +1,77 @@
+# メンバー一覧。毎年4月に学年を更新する。groups の順に表示される。
+
+groups:
+- name: 教員
+  members:
+  - ja: 山本 岳洋
+    en: Takehiro YAMAMOTO
+    url: https://rerank-lab.org
+- name: D
+  members:
+  - ja: 飛岡 憲
+    en: Ken TOBIOKA
+- name: M1
+  members:
+  - ja: 池元 太陽
+    en: Taiyo IKEMOTO
+  - ja: 熊野 桃
+    en: Momo KUMANO
+  - ja: 小西 史人
+    en: Huhito KONISHI
+  - ja: 谷口 壮平
+    en: Sohei TANIGUCHI
+  - ja: 宮崎 隆豪
+    en: Ryugo MIYAZAKI
+  - ja: 米村 琉衣
+    en: Rui YONEMURA
+- name: B4
+  members:
+  - ja: 木下 萌々香
+    en: Momoka KINOSHITA
+  - ja: 福岡 絵梨花
+    en: Erika FUKUOKA
+  - ja: 増田 智哉
+    en: Tomoya MASUDA
+  - ja: 三上 舞
+    en: Mai MIKAMI
+  - ja: 弓削田 悠月
+    en: Yuzuki YUGETA
+- name: 卒業生
+  members:
+  - ja: 榊原 昂佑
+    en: Kosuke SAKAKIBARA
+  - ja: 坂本 悠輔
+    en: Yusuke SAKAMOTO
+  - ja: 今坂 優太
+    en: Yuta IMASAKA
+  - ja: 泰山 幸大
+    en: Kodai TAIYAMA
+  - ja: 花井 拓未
+    en: Takumi HANAI
+  - ja: 河田 友香
+    en: Yuka KAWADA
+  - ja: 工家 昂之
+    en: Takayuki KUGE
+  - ja: 前田 直宏
+    en: Naohiro MAEDA
+  - ja: 小伊勢 琉貴
+    en: Ryuki KOISE
+  - ja: 平位 遼
+    en: Ryo HIRAI
+  - ja: 徳留 壮哉
+    en: Souya TOKUTOME
+  - ja: 萩原 諒
+    en: Ryo HAGIWARA
+  - ja: 森田 佑菜
+    en: Yuna MORITA
+  - ja: 佐々木 泰河
+    en: Taiga SASAKI
+  - ja: 中井 香那子
+    en: Kanako NAKAI
+  - ja: 福井 智矢
+    en: Tomoya FUKUI
+  - ja: 藤井 真梨乃
+    en: Marino FUJII
+  - ja: Wang Yilin
+  - ja: 堀部 淳貴
+    en: Atsuki HORIBE

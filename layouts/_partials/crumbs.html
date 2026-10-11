@@ -1,0 +1,4 @@
+<nav class="crumbs" aria-label="breadcrumb">
+  <a href="{{ site.Home.RelPermalink }}">{{ i18n "home" }}</a>
+  {{ if .IsPage }}{{ with .Parent }}{{ if not .IsHome }}<span>›</span><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}{{ end }}{{ end }}
+</nav>

@@ -1,0 +1,7 @@
+{{- /* 研究紹介・記事のカード。画像は image: か、本文の最初の画像 */ -}}
+{{- $img := partial "firstimg.html" . -}}
+<a class="card" href="{{ .RelPermalink }}">
+  <span class="card-img{{ if not $img }} noimg{{ end }}"{{ with $img }} style="background-image:url('{{ . }}')"{{ end }}></span>
+  <span class="card-title">{{ .Title }}</span>
+  <time>{{ .Date.Format "2006-01-02" }}</time>
+</a>

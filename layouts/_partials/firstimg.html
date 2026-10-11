@@ -1,0 +1,4 @@
+{{- /* ページの代表画像: front matter の image: か、本文の最初の画像（なければ空） */ -}}
+{{- $img := .Params.image -}}
+{{- if not $img }}{{ with findRESubmatch `!\[[^\]]*\]\(([^) ]+)` .RawContent 1 }}{{ $img = index (index . 0) 1 }}{{ end }}{{ end -}}
+{{- return $img -}}

@@ -1,0 +1,23 @@
+{{ define "main" }}
+<article class="content">
+  <header class="page-head">
+    {{ partial "crumbs.html" . }}
+    <h1>{{ .Title }}</h1>
+  </header>
+  {{- /* 記事一覧: 冒頭の抜粋（約180字）＋代表画像1枚。全文は個別ページで */}}
+  {{ $pager := .Paginate .Pages.ByDate.Reverse }}
+  {{ range $pager.Pages }}
+  {{ $img := partial "firstimg.html" . }}
+  <section class="post">
+    <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p class="date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time></p>
+    <div class="post-excerpt{{ if $img }} has-img{{ end }}">
+      <p>{{ .Content | plainify | htmlUnescape | replaceRE `\s+` " " | strings.TrimSpace | truncate 180 }}
+        <a class="more" href="{{ .RelPermalink }}">{{ i18n "readMore" }}</a></p>
+      {{ with $img }}<a class="post-thumb" href="{{ $.RelPermalink }}"><img src="{{ . }}" alt="" loading="lazy"></a>{{ end }}
+    </div>
+  </section>
+  {{ end }}
+  {{ partial "pager.html" $pager }}
+</article>
+{{ end }}

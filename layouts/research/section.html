@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article class="content">
+  <header class="page-head">
+    {{ partial "crumbs.html" . }}
+    <h1>{{ .Title }}</h1>
+  </header>
+  {{ $pager := .Paginate .Pages.ByDate.Reverse }}
+  {{ if eq $pager.PageNumber 1 }}<div class="body">{{ .Content }}</div>{{ end }}
+  <div class="cards">{{ range $pager.Pages }}{{ partial "card.html" . }}{{ end }}</div>
+  {{ partial "pager.html" $pager }}
+</article>
+{{ end }}

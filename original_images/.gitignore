@@ -1,0 +1,4 @@
+# この中の写真は git で管理しない（フォルダだけ残す）。
+# 元の写真をここに入れて python3 tools/addimg.py 2026-09 original_images で変換する。
+*
+!.gitignore

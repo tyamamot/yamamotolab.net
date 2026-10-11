@@ -1,0 +1,22 @@
+{{- /* 業績1件。ja: / en: に書いた項目はその言語でだけ上書きされる */ -}}
+{{- $e := .e -}}
+{{- with index .e .lang }}{{ $e = merge $e . }}{{ end -}}
+{{- $lines := slice -}}
+{{- if $e.text -}}
+  {{- $lines = $lines | append ($e.text | markdownify) -}}
+{{- else -}}
+  {{- with $e.authors -}}
+    {{- $a := . | htmlEscape -}}
+    {{- range site.Params.selfNames }}{{ $a = replace $a . (printf "<strong>%s</strong>" .) }}{{ end -}}
+    {{- $lines = $lines | append (printf "%s%s" ($e.prefix | default "") $a) -}}
+  {{- else -}}{{ with $e.prefix }}{{ $lines = $lines | append . }}{{ end }}
+  {{- end -}}
+  {{- with $e.title }}{{ $lines = $lines | append (printf "<em>%s</em>" (. | markdownify)) }}{{ end -}}
+  {{- with $e.venue }}{{ range split . "\n" }}{{ $lines = $lines | append (. | markdownify) }}{{ end }}{{ end -}}
+{{- end -}}
+{{- with $e.award -}}
+  {{- $aw := slice -}}
+  {{- range (cond (reflect.IsSlice .) . (slice .)) }}{{ $aw = $aw | append (printf "<mark>%s</mark>" (. | markdownify)) }}{{ end -}}
+  {{- $lines = $lines | append (delimit $aw ", ") -}}
+{{- end -}}
+{{- delimit $lines "<br>\n" | safeHTML -}}

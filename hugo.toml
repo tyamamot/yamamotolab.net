@@ -1,0 +1,67 @@
+baseURL = "https://yamamotolab.net/"
+locale = "ja-JP"
+defaultContentLanguage = "ja"
+title = "兵庫県立大学 山本研究室"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[pagination]
+  pagerSize = 10            # 記事一覧・研究紹介の1ページあたりの件数
+
+[frontmatter]
+  date = [":filename", ":default"]   # ファイル名「YYYY-MM-DD-名前.md」から日付とURLの名前(slug)を取る
+
+[permalinks.page]
+  posts = "/posts/:year/:slug/"      # 記事:     /posts/2026/sigir-ap-2026/
+  research = "/research/:year/:slug/" # 研究紹介: /research/2025/model-merging-adhoc/
+
+[markup.goldmark.renderer]
+  unsafe = true             # Markdown中のHTML（地図の埋め込みなど）を表示
+[markup.goldmark.extensions.extras.mark]
+  enable = true             # ==受賞名== → 強調表示
+
+[menus]
+  [[menus.main]]
+    name = "ホーム"
+    pageRef = "/"
+    weight = 10
+  [[menus.main]]
+    name = "メンバー"
+    pageRef = "/members"
+    weight = 20
+  [[menus.main]]
+    name = "研究紹介"
+    pageRef = "/research"
+    weight = 30
+  [[menus.main]]
+    name = "記事"
+    pageRef = "/posts"
+    weight = 40
+  [[menus.main]]
+    name = "研究成果"
+    pageRef = "/publications"
+    weight = 50
+  [[menus.main]]
+    name = "学生募集"
+    pageRef = "/join"
+    weight = 60
+
+[params]
+  design = "sidebar"        # 灰背景＋白カード＋右サイドバー（assets/css/design-sidebar.css）
+  author = "山本研究室"
+  description = "兵庫県立大学 大学院情報科学研究科 / 社会情報科学部 山本研究室のウェブサイトです。情報検索に関わる研究を行っています。"
+  recentNews = 7
+  affiliation = "兵庫県立大学 大学院情報科学研究科 / 社会情報科学部"
+  address = "〒651-2197 神戸市西区学園西町8丁目2-1 兵庫県立大学 神戸商科キャンパス 情報科学研究棟"
+  mapEmbed = "https://www.google.com/maps/d/embed?mid=1JwS1HgQVvrl06yKeqL14qDn1tB9rdW8_&ehbc=2E312F"
+  contactName = "山本岳洋"
+  contactUrl = "https://rerank-lab.org/"
+  [[params.sideLinks]]
+    name = "山本岳洋（個人ページ）"
+    url = "https://rerank-lab.org/"
+  [[params.sideLinks]]
+    name = "兵庫県立大学 大学院情報科学研究科"
+    url = "https://u-hyogo-gsis.org/"
+  [[params.sideLinks]]
+    name = "兵庫県立大学 社会情報科学部"
+    url = "https://www.u-hyogo.ac.jp/sis/"

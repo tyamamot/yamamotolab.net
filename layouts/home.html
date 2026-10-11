@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="home">
+  <section class="intro">
+    <p class="hero-kicker">{{ site.Params.affiliation }}</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.tagline }}<p class="hero-tagline">{{ . }}</p>{{ end }}
+    <div class="hero-lead">{{ .Content }}</div>
+  </section>
+
+  {{ with site.GetPage "/posts" }}
+  <section class="home-sec">
+    <div class="sec-head"><h2>最近の記事</h2><a href="{{ .RelPermalink }}">記事一覧 →</a></div>
+    {{ partial "newslist.html" (first site.Params.recentNews .Pages.ByDate.Reverse) }}
+  </section>
+  {{ end }}
+
+  <section class="home-sec join-band">
+    <div>
+      <h2>山本研に興味のある学生さんへ</h2>
+      <p>研究室のメンバーと一緒に研究に取り組む意欲のある学生を募集しています。</p>
+    </div>
+    <a class="btn btn-invert" href="{{ (site.GetPage "/join").RelPermalink }}">学生募集を見る →</a>
+  </section>
+
+  <section class="home-sec access-sec">
+    <div class="sec-head"><h2>アクセス・お問い合わせ</h2></div>
+    <div class="access-grid">
+      <div>
+        <p>{{ site.Params.address }}</p>
+        <p>お問い合わせはお気軽に<a href="{{ site.Params.contactUrl }}">{{ site.Params.contactName }}</a>までご連絡ください。</p>
+      </div>
+      {{ with site.Params.mapEmbed }}<iframe src="{{ . }}" title="地図"></iframe>{{ end }}
+    </div>
+  </section>
+</div>
+{{ end }}

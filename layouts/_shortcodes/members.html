@@ -1,0 +1,13 @@
+{{/* メンバー一覧 {{< members >}}。data/members.yaml から生成 */}}
+{{- with hugo.Data.members }}
+<div class="members">
+{{- range .groups }}
+  <h3>{{ .name }}</h3>
+  <ul class="member-list">
+  {{- range .members }}
+    <li>{{ with .url }}<a href="{{ . }}">{{ end }}{{ .ja }}{{ with .url }}</a>{{ end }}{{ with .en }}<span class="en">{{ . }}</span>{{ end }}</li>
+  {{- end }}
+  </ul>
+{{- end }}
+</div>
+{{- end }}

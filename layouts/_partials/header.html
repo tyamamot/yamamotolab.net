@@ -1,0 +1,12 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="site-name" href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+  </div>
+  <nav class="wrap nav">
+    {{ $cur := . }}
+    {{ range site.Menus.main }}
+      {{ $active := or ($cur.IsMenuCurrent "main" .) ($cur.HasMenuCurrent "main" .) (and .Page (eq .Page $cur)) (and .Page $cur.IsPage (ne $cur.Section "") (not .Page.IsHome) (eq $cur.Section .Page.Section)) }}
+      <a href="{{ .URL }}"{{ if $active }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a>
+    {{ end }}
+  </nav>
+</header>

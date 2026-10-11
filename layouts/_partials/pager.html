@@ -1,0 +1,13 @@
+{{- /* ページ送り。引数はページャ（.Paginate の戻り値） */ -}}
+{{- $pager := . -}}
+{{- if gt $pager.TotalPages 1 }}
+<nav class="pager">
+  {{ with $pager.Prev }}<a class="prev" href="{{ .URL }}">{{ i18n "newer" }}</a>{{ end }}
+  <span class="pages">
+  {{ range $pager.Pagers }}
+    {{ if eq . $pager }}<span class="cur">{{ .PageNumber }}</span>{{ else }}<a href="{{ .URL }}">{{ .PageNumber }}</a>{{ end }}
+  {{ end }}
+  </span>
+  {{ with $pager.Next }}<a class="next" href="{{ .URL }}">{{ i18n "older" }}</a>{{ end }}
+</nav>
+{{- end }}

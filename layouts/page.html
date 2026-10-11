@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article class="content">
+  <header class="page-head">
+    {{ partial "crumbs.html" . }}
+    <h1>{{ .Title }}</h1>
+    {{ if in (slice "posts" "research") .Section }}<p class="date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time></p>{{ end }}
+  </header>
+  {{ with .Params.image }}<p class="hero"><img src="{{ . }}" alt=""></p>{{ end }}
+  <div class="body">{{ .Content }}</div>
+</article>
+{{ end }}

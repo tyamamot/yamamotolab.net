@@ -1,0 +1,287 @@
+# 研究成果。書式は個人サイト rerank-lab.org の data/publications/*.yaml と同じ（項目をそのままコピペできる）。
+# 新しいものを上に追加。date（YYYY-MM）から年度（4月始まり）を計算して年度ごとに表示し、年度内は date の新しい順。
+
+- date: "2026-09"
+  authors: 池元太陽, 山本岳洋
+  title: 賛否両論あるトピックにおける検索結果のスタンス分布に影響を与える要因の分析
+  venue: 情報処理学会 第164回情報基礎とアクセス技術研究会（SIG-IFAT）研究報告, 2026年9月.
+- date: "2026-12"
+  authors: Sohei Taniguchi, Taiga Sasaki, Takehiro Yamamoto, Hiroaki Ohshima and Sumio Fujita
+  title: Mitigating Catastrophic Forgetting in Domain-Specific Ad-hoc Retrieval via Model Merging
+  venue: Proceedings of the 4th International ACM SIGIR Conference on Information Retrieval in the Asia Pacific (SIGIR-AP 2026), to appear, December 2026.
+- date: "2026-12"
+  authors: Taiyo Ikemoto and Takehiro Yamamoto
+  title: Analyzing the Effects of Query Type and Ranking Methods on the Stance Distribution of Search Results on Controversial Topics
+  venue: Proceedings of the 4th International ACM SIGIR Conference on Information Retrieval in the Asia Pacific (SIGIR-AP 2026), to appear, December 2026.
+- date: "2026-10"
+  authors: Momo Kumano, Ken Tobioka and Takehiro Yamamoto
+  title: Impact of Response Length on Nugget-Level Stance Distribution in Conversational Search
+  venue: Proceedings of the 13th International Conference on Behavioural and Social Computing (BESC 2026), to appear, October 2026.
+- date: "2026-10"
+  authors: Rui Yonemura, Kanako Nakai and Takehiro Yamamoto
+  title: Correction and Supplementary Text Generation for Output-Based Learning Using Speaker Claim Extraction and RAG
+  venue: Proceedings of the 13th International Conference on Behavioural and Social Computing (BESC 2026), to appear, October 2026.
+- date: "2026-07"
+  authors: Taiga Sasaki, Takehiro Yamamoto, Hiroaki Ohshima and Sumio Fujita
+  title: Model Merging as an Alternative to Fine-Tuning on Combined Data for a Multi-Domain Dense Retriever
+  venue: Proceedings of the 2026 ACM Conference on Innovative Concepts and Theories in Information Retrieval (ICTIR 2026), pp.349-355, July 2026.
+- date: "2026-04"
+  authors: 佐々木泰河, 山本岳洋, 大島裕明, 藤田澄男
+  title: モデルマージによるドメイン特化検索モデルの構築
+  venue: 情報処理学会論文誌：データベース (TOD109), Vol.19, No.2, pp.1-12, 2026年4月.
+- date: "2026-03"
+  authors: 藤井真梨乃, 山本岳洋, 湯本高行
+  title: 類似商品のレビューを用いた評価情報補完
+  venue: 日本データベース学会和文論文誌, Vol.24-J, No.11, pp.1-7, 2026年3月.
+- date: "2026-03"
+  authors: 谷口壮平, 佐々木泰河, 山本岳洋, 大島裕明, 藤田澄男
+  title: アドホック検索におけるモデルマージによる破滅的忘却の抑制
+  venue: 第18回データ工学と情報マネジメントに関するフォーラム（DEIM 2026）, 1F-02, 2026年3月.
+- date: "2026-03"
+  authors: 佐々木泰河, 山本岳洋, 大島裕明, 藤田澄男
+  title: モデルマージによるドメイン特化密検索モデルの統合と分析
+  venue: 第18回データ工学と情報マネジメントに関するフォーラム（DEIM 2026）, 1F-03, 2026年3月.
+  award: 学生プレゼンテーション賞
+- date: "2026-03"
+  authors: 米村琉衣, 中井香那子, 山本岳洋
+  title: アウトプット型学習のための主張抽出とRAGに基づく訂正・補足情報の生成
+  venue: 第18回データ工学と情報マネジメントに関するフォーラム（DEIM 2026）, 3H-01, 2026年3月.
+- date: "2026-03"
+  authors: 中井香那子, 山本岳洋, 大島裕明
+  title: 大規模言語モデルによるレビューの対照型集約にもとづく商品比較表の生成
+  venue: 第18回データ工学と情報マネジメントに関するフォーラム（DEIM 2026）, 6B-02, 2026年3月.
+  award: 学生プレゼンテーション賞
+- date: "2026-03"
+  authors: 飛岡憲, 山本岳洋, 大島裕明
+  title: 音声対話型検索における検索履歴のナラティブ化による検索再開支援
+  venue: 第18回データ工学と情報マネジメントに関するフォーラム（DEIM 2026）, 4F-01, 2026年3月.
+  award: 学生プレゼンテーション賞
+- date: "2026-03"
+  authors: 熊野桃, 飛岡憲, 山本岳洋
+  title: 対話型検索における応答長がナゲットレベルの賛否分布に与える影響の分析
+  venue: 第18回データ工学と情報マネジメントに関するフォーラム（DEIM 2026）, 4F-03, 2026年3月.
+- date: "2026-03"
+  authors: 池元太陽, 山本岳洋
+  title: クエリ形式とランキング手法が検索結果のスタンス分布に与える影響の分析
+  venue: 第18回データ工学と情報マネジメントに関するフォーラム（DEIM 2026）, 7F-05, 2026年3月.
+- date: "2026-03"
+  authors: 藤井真梨乃, 山本岳洋, 湯本高行
+  title: 属性に基づいた類似商品レビュー検索による評価情報補完インタフェース
+  venue: 第18回データ工学と情報マネジメントに関するフォーラム（DEIM 2026）, 7G-03, 2026年3月.
+- date: "2026-01"
+  authors: 飛岡憲, 山本岳洋, 大島裕明
+  title: 音声対話型検索における応答の長さとタスク複雑性が情報獲得と検索行動に与える影響
+  venue: 情報処理学会論文誌：データベース (TOD108), Vol.19, No.1, pp.146-158, 2026年1月.
+- date: "2025-12"
+  authors: Marino Fujii, Takehiro Yamamoto and Takayuki Yumoto
+  title: 'Supplementing Product Reviews: Retrieving Opinions from Products with Similar Attributes'
+  venue: Proceedings of the 27th International Conference on Information Integration and Web Intelligence (iiWAS 2025), pp.15-30, December 2025.
+- date: "2025-12"
+  authors: Kanako Nakai, Takehiro Yamamoto and Hiroaki Ohshima
+  title: Generating Comparative Table by LLM-based Product Review Summarization
+  venue: Proceedings of the 27th International Conference on Information Integration and Web Intelligence (iiWAS 2025), pp.31-46, December 2025.
+- date: "2025-12"
+  authors: Yilin Wang, Takehiro Yamamoto and Hiroaki Ohshima
+  title: Generating Interactive Japanese Puns Based on Phoneme Similarity
+  venue: Proceedings of the 27th International Conference on Information Integration and Web Intelligence (iiWAS 2025), pp.79-94, December 2025.
+- date: "2025-12"
+  authors: Tomoya Fukui, Takehiro Yamamoto and Takayuki Yumoto
+  title: Retrieving More Concrete Product Reviews by Query Rewriting with Retrieved Review Concretization
+  venue: Proceedings of the 27th International Conference on Information Integration and Web Intelligence (iiWAS 2025), pp.180-186, December 2025.
+- date: "2025-11"
+  authors: Taiga Sasaki, Takehiro Yamamoto, Hiroaki Ohshima and Sumio Fujita
+  title: Effect of Model Merging in Domain-Specific Ad-hoc Retrieval
+  venue: Proceedings of the 34th ACM International Conference on Information and Knowledge Management (CIKM 2025), pp. 5208-5212, November 2025.
+- date: "2025-11"
+  authors: 中井香那子, 山本岳洋, 大島裕明
+  title: レビュー集約による商品比較表の作成と評価
+  venue: IDRユーザフォーラム 2025, 2025年11月.
+- date: "2025-11"
+  authors: 福井智矢，山本岳洋，湯本高行
+  title: 擬似順序付け合成データによる具体性を考慮した密検索モデルの構築
+  venue: IDRユーザフォーラム 2025, 2025年11月.
+- date: "2025-09"
+  authors: 佐々木泰河, 山本岳洋, 大島裕明, 藤田澄男
+  title: モデルマージによる複数ドメインに対応した単一密検索モデルの構築
+  venue: 情報処理学会 第160回情報基礎とアクセス技術研究会（SIG-IFAT）研究報告, 2025年9月.
+  award: 学生奨励賞
+- date: "2025-08"
+  authors: Ken Tobioka, Takehiro Yamamoto and Hiroaki Ohshima
+  title: Effects of Response Length on User Search Experience in Spoken Conversational Search
+  venue: Proceedings of the 27th International Conference on Big Data Analytics and Knowledge Discovery (DaWak 2025), pp.231-236, August 2025.
+- date: "2025-07"
+  authors: 飛岡憲, 山本岳洋, 大島裕明
+  title: 音声対話型検索における多様な情報獲得を促すための観点推薦タイミングに関する研究
+  venue: 情報処理学会論文誌：データベース (TOD106), Vol.18, No.3, pp.8-19, 2025年7月.
+- date: "2025-03"
+  authors: 河田友香, 山本岳洋, 大島裕明, 藤田澄男
+  title: 商品属性とレビューの対応関係学習に基づく言語モデル
+  venue: 日本データベース学会データドリブンスタディーズ, Vol.3, No.6, pp.1-8, 2025年3月.
+- date: "2025-03"
+  authors: 中井香那子, 山本岳洋, 大島裕明
+  title: 大規模言語モデルを用いた商品比較のためのレビュー集約
+  venue: 第17回データ工学と情報マネジメントに関するフォーラム（DEIM 2025）, 3A-03, 2025年3月.
+  award: 学生プレゼンテーション賞
+- date: "2025-03"
+  authors: 佐々木泰河, 山本岳洋, 大島裕明, 藤田澄男
+  title: アドホック検索タスクにおけるモデルマージの効果検証
+  venue: 第17回データ工学と情報マネジメントに関するフォーラム（DEIM 2025）, 1E-05, 2025年3月.
+  award: 優秀論文賞
+- date: "2025-03"
+  authors: 飛岡憲, 山本岳洋, 大島裕明
+  title: 音声対話型検索におけるシステムの応答の長さが検索行動へ与える影響の分析
+  venue: 第17回データ工学と情報マネジメントに関するフォーラム（DEIM 2025）, 3E-02, 2025年3月.
+  award: 学生プレゼンテーション賞
+- date: "2025-03"
+  authors: 福井智矢, 山本岳洋, 湯本高行
+  title: LLMを用いた多段階クエリ変換によるより具体的な商品レビューの検索
+  venue: 第17回データ工学と情報マネジメントに関するフォーラム（DEIM 2025）, 5L-04, 2025年3月.
+  award: 学生プレゼンテーション賞
+- date: "2025-03"
+  authors: 藤井真梨乃, 山本岳洋, 湯本高行
+  title: 類似商品のレビューを用いた評価情報補完
+  venue: 第17回データ工学と情報マネジメントに関するフォーラム（DEIM 2025）, 7E-05, 2025年3月.
+- date: "2025-03"
+  authors: Wang Yilin, 山本岳洋, 大島裕明
+  title: 音素の類似性による対話型駄洒落の生成
+  venue: 第17回データ工学と情報マネジメントに関するフォーラム（DEIM 2025）, 8H-02, 2025年3月.
+- date: "2024-12"
+  authors: Ken Tobioka, Takehiro Yamamoto and Hiroaki Ohshima
+  title: Timing of Aspect Suggestion to Encourage Diverse Information Acquisition in Spoken Conversational Search
+  venue: Proceedings of the 2nd International ACM SIGIR Conference on Information Retrieval in the Asia Pacific (SIGIR-AP 2024), pp.145-153, December 2024.
+  award: Best paper shortlisted nominees
+- date: "2024-12"
+  authors: 中井香那子, 山本岳洋, 大島裕明
+  title: 大規模言語モデルを用いたレビュー集約による商品比較表の作成
+  venue: IDRユーザフォーラム 2024, 2024年12月.
+  award: 奨励賞
+- date: "2024-09"
+  authors: 萩原諒, 山本岳洋, 湯本高行
+  title: 大規模言語モデルを用いた賛否両論ある検索トピックに関するウェブページのスタンス判定
+  venue: 第23回情報科学技術フォーラム（FIT 2024）, D-009, 2024年9月.
+- date: "2024-09"
+  authors: 徳留壮哉, 山本岳洋, 湯本高行
+  title: 細粒度のユーザ属性に基づく観光地レビューの検索
+  venue: 第23回情報科学技術フォーラム（FIT 2024）, D-017, 2024年9月.
+- date: "2024-07"
+  authors: Taiga Sasaki, Takehiro Yamamoto, Yoshiyuki Shoji, Takayuki Kuge and Hiroaki Ohshima
+  title: Generating News Headline Containing Specific Person Name
+  venue: Proceedings of the DASFAA 2024 Workshop on Emerging Results in Data Science and Engineering (ERDSE 2024), pp.220-227, July 2024.
+- date: "2024-07"
+  authors: Kanako Nakai, Yuka Kawada, Takehiro Yamamoto and Hiroaki Ohshima
+  title: Investigating Evidence in Sentence Similarity using MASK in BERT
+  venue: Proceedings of the DASFAA 2024 Workshop on Emerging Results in Data Science and Engineering (ERDSE 2024), pp.228-235, July 2024.
+- date: "2024-07"
+  authors: Marino Fujii, Yuka Kawada, Takehiro Yamamoto and Takayuki Yumoto
+  title: Review Search Interface Based on Search Result Summarization Using Large Language Model
+  venue: Proceedings of the DASFAA 2024 Workshop on Emerging Results in Data Science and Engineering (ERDSE 2024), pp.293-301, July 2024.
+- date: "2024-03"
+  authors: Yuna Morita, Takehiro Yamamoto, Yoshiyuki Shoji, Hiroaki Ohshima, Yusuke Yamamoto, Noriko Kando and Kenro Aihara
+  title: Impressing museum visitors by having them answer questions toward the realization of an interactive viewing support system
+  venue: Proceedings of the 12th IEEE International Conference on Information and Education Technology (IEEE ICIET 2024), March 2024.
+- date: "2024-03"
+  authors: 平位遼, 飛岡憲, 山本岳洋
+  title: 音声対話型検索における階層型検索意図を用いたクエリ推薦の戦略
+  venue: 第16回データ工学と情報マネジメントに関するフォーラム（DEIM 2024）,T3-B-2-03, 2024年3月.
+- date: "2024-03"
+  authors: 中井香那子, 河田友香, 山本岳洋
+  title: 文章間類似性判定モデルの根拠の抽出
+  venue: 第16回データ工学と情報マネジメントに関するフォーラム（DEIM 2024）, T1-A-4-02, 2024年3月.
+  award: 学生プレゼンテーション賞
+- date: "2024-03"
+  authors: 佐々木泰河, 工家昂之, 山本岳洋, 莊司慶行
+  title: 特定選手に注目した試合結果記事見出しのパーソナライズ
+  venue: 第16回データ工学と情報マネジメントに関するフォーラム（DEIM 2024）, T1-B-6-04, 2024年3月.
+  award: 学生プレゼンテーション賞
+- date: "2024-03"
+  authors: 河田友香, 山本岳洋, 大島裕明, 藤田澄男
+  title: 追加事前学習によるレビューと商品属性の対応関係学習
+  venue: 第16回データ工学と情報マネジメントに関するフォーラム（DEIM 2024）, T3-A-5-04, 2024年3月.
+  award: 学生プレゼンテーション賞
+- date: "2024-03"
+  authors: 前田直宏, 山本岳洋
+  title: 生成型要約に基づくWebページのサムネイル生成
+  venue: 第16回データ工学と情報マネジメントに関するフォーラム（DEIM 2024）, T3-B-4-03, 2024年3月.
+- date: "2024-03"
+  authors: 藤井真梨乃, 河田友香, 山本岳洋
+  title: 大規模言語モデルを用いたその場での要約に基づくレビュー探索インタフェース
+  venue: 第16回データ工学と情報マネジメントに関するフォーラム（DEIM 2024）, T3-B-5-04, 2024年3月.
+  award: 学生プレゼンテーション賞
+- date: "2024-03"
+  authors: 工家昂之, 山本岳洋, 莊司慶行
+  title: 手続き的知識源学習によるタスク検索における方法と目的の生成
+  venue: 第16回データ工学と情報マネジメントに関するフォーラム（DEIM 2024）, T3-C-8-04, 2024年3月.
+- date: "2023-12"
+  authors: Yuka Kawada, Takehiro Yamamoto, Hiroaki Ohshima, Yuki Yanagida, Makoto P. Kato and Sumio Fujita
+  title: Analyzing Web Search Queries of Before and After Purchase on e-Commerce Site
+  venue: Proceedings of the 25th International Conference on Asia-Pacific Digital Libraries (ICADL 2023), pp. 181-187, December 2023.
+- date: "2023-12"
+  authors: Ryo Hagiwara and Takehiro Yamamoto
+  title: Web Page Evaluation and Opinion Formation on Controversial Search Topics
+  venue: Proceedings of the 25th International Conference on Asia-Pacific Digital Libraries (ICADL 2023), pp. 188-203, December 2023.
+  award: Best Student Paper Award
+- date: "2023-12"
+  authors: Takehiro Yamamoto, Zhicheng Dou
+  title: Overview of NTCIR-17
+  venue: Proceedings of the 17th NTCIR Conference on Evaluation of Information Access Technologies (NTCIR-17), pp.3-7, December 2023.
+- date: "2023-06"
+  authors: 河田友香，山本岳洋，大島裕明，藤田澄男
+  title: 属性寄与度を用いた商品属性とレビューの対応関係学習モデルの評価
+  venue: 情報処理学会研究報告 (IFAT-151), 2023年6月.
+- date: "2023-03"
+  authors: 飛岡憲, 山本岳洋
+  title: 音声会話型検索エージェントにおける多様な情報を促すための観点推薦タイミングに関する研究
+  venue: 第15回データ工学と情報マネジメントに関するフォーラム（DEIM 2023）, 3a-9-5, 2023年3月.
+- date: "2023-03"
+  authors: 今坂優太, 山本岳洋, 大島裕明, 加藤誠, 藤田澄男
+  title: 健康情報検索におけるクエリに含まれる暗黙的な仮定の検出
+  venue: 第15回データ工学と情報マネジメントに関するフォーラム（DEIM 2023）, 3a-9-2, 2023年3月.
+  award: 学生プレゼンテーション賞
+- date: "2023-03"
+  authors: 森田佑菜, 山本岳洋, 莊司慶行, 大島裕明, 山本祐輔, 神門典子, 相原健郎
+  title: 対話型鑑賞システム実現に向けた質問に答えさせることによる博物館鑑賞の印象付け
+  venue: 第15回データ工学と情報マネジメントに関するフォーラム（DEIM 2023）, 3a-8-2, 2023年3月.
+  award:
+  - 学生プレゼンテーション賞
+  - 優秀インタラクティブ賞
+- date: "2023-03"
+  authors: 泰山幸大, 山本岳洋
+  title: 競技プログラミングにおける記号と制約を考慮したモデルによる着眼点の分類
+  venue: 第15回データ工学と情報マネジメントに関するフォーラム（DEIM 2023）, 3b-7-3, 2023年3月.
+- date: "2023-03"
+  authors: 河田友香, 山本岳洋, 大島裕明, 柳田雄輝, 加藤誠, 藤田澄男
+  title: 商品属性とレビューの対応関係学習に基づく言語モデル構築
+  venue: 第15回データ工学と情報マネジメントに関するフォーラム（DEIM 2023）, 3a-7-3, 2023年3月.
+  award: 学生プレゼンテーション賞
+- date: "2023-03"
+  authors: 前田直宏, 山本岳洋
+  title: カスタマイズ可能なWebページサムネイル生成のためのDOMノード役割推定
+  venue: 第15回データ工学と情報マネジメントに関するフォーラム（DEIM 2023）, 3a-6-4, 2023年3月.
+- date: "2023-03"
+  authors: 花井拓未, 山本岳洋
+  title: オンライン上の健康情報に対する接触頻度および信頼性意識調査
+  venue: 第15回データ工学と情報マネジメントに関するフォーラム（DEIM 2023）, 5b-4-5, 2023年3月.
+- date: "2023-03"
+  authors: 萩原諒, 山本岳洋
+  title: 賛否両論ある検索トピックにおけるウェブページ評価と意見形成の調査
+  venue: 第15回データ工学と情報マネジメントに関するフォーラム（DEIM 2023）, 3a-4-2, 2023年3月.
+- date: "2023-03"
+  authors: 工家昂之, 山本岳洋, 莊司慶行
+  title: 手続き的知識源を用いた方法を表すクエリからの目的抽出
+  venue: 第15回データ工学と情報マネジメントに関するフォーラム（DEIM 2023）, 3a-2-2, 2023年3月.
+- date: "2023-01"
+  authors: Takehiro Yamamoto, Zhicheng Dou, Noriko Kando, Charles L. A. Clarke, Makoto P. Kato, Yiqun Liu
+  title: Report on the 16th Round of NII Testbeds and Community for Information Access Research (NTCIR-16)
+  venue: ACM SIGIR Forum, Vol. 56, Issue 2, No.7, pp.1–8, January 2023.
+- date: "2022-06"
+  authors: Takehiro Yamamoto, Zhicheng Dou
+  title: Overview of NTCIR-16
+  venue: Proceedings of the 16th NTCIR Conference on Evaluation of Information Access Technologies (NTCIR-16), pp.3-7, June 2022.
+- date: "2022-03"
+  authors: 坂本悠輔, 山本岳洋
+  title: 過去の類似ニュースに基づいたニュース記事からの株価変動予測
+  venue: 第14回データ工学と情報マネジメントに関するフォーラム（DEIM 2022）, D33-2, 2022年3月.
+- date: "2022-03"
+  authors: 河田友香, 山本岳洋, 大島裕明, 柳田雄輝, 加藤誠, 藤田澄男
+  title: ECサイトでのカメラ購買前後におけるWeb検索クエリの時系列分析
+  venue: 第14回データ工学と情報マネジメントに関するフォーラム（DEIM 2022）, C41-4, 2022年3月.

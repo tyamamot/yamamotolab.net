@@ -1,0 +1,50 @@
+/* ===== 枠案2: カード＋右サイドバー（旧サイトの構成を現代風に） ===== */
+:root { --page: #f3f4f6; --card: #ffffff; }
+@media (prefers-color-scheme: dark) { :root { --page: #0b0d11; --card: #151821; } }
+body { background: var(--page); }
+.wrap { max-width: 1120px; }
+.site-header { background: var(--card); }
+main.wrap { padding-top: 28px; }
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) 290px; gap: 28px; align-items: start; }
+.main-col { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 36px 44px 44px; }
+.sidebar { display: flex; flex-direction: column; gap: 20px; position: sticky; top: 20px; }
+.side-box { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; }
+.side-box h3 { margin: 0 0 10px; font-size: 1rem; padding-bottom: 6px; border-bottom: 3px solid var(--line); }
+.side-news { list-style: none; padding: 0; margin: 0; }
+.side-news li { padding: 8px 0; border-bottom: 1px dashed var(--line); font-size: .9rem; line-height: 1.55; }
+.side-news time { display: block; color: var(--muted); font-size: .78rem; margin-top: 2px; }
+.side-box .links { margin: 0; }
+.is-home .recent { display: none; }
+.content h2, .content h3 { border-bottom: 3px solid var(--line); padding-bottom: 6px; }
+.site-footer { border-top: 0; text-align: center; }
+@media (max-width: 900px) { .layout { grid-template-columns: 1fr; } .sidebar { position: static; } }
+@media (max-width: 600px) { main.wrap { padding: 16px 10px 32px; } .main-col { padding: 22px 18px 28px; } }
+
+/* sidebar links */
+.side-links { list-style: none; padding: 0; margin: 0; font-size: .9rem; }
+.side-links li { padding: 6px 0; border-bottom: 1px dashed var(--line); line-height: 1.5; }
+.side-links li:last-child, .side-news li:last-child { border-bottom: 0; }
+
+/* post list (記事一覧) */
+.post { padding: 4px 0 26px; margin-bottom: 26px; border-bottom: 1px solid var(--line); }
+.post:last-of-type { border-bottom: 0; margin-bottom: 8px; }
+.content .post-title { font-size: 1.2rem; margin: 0; padding: 0; border: 0; line-height: 1.5; }
+.post-title a { color: var(--fg); }
+.post-title a:hover { color: var(--accent); }
+.post .date { margin: 4px 0 10px; font-size: .85rem; }
+.post-body > :first-child { margin-top: 0; }
+.pager { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 24px; padding-top: 18px; border-top: 3px solid var(--line); font-size: .92rem; }
+.pager .pages { display: flex; gap: 6px; margin: 0 auto; }
+.pager .pages a, .pager .pages .cur { min-width: 34px; text-align: center; padding: 3px 8px; border-radius: 6px; border: 1px solid var(--line); }
+.pager .pages .cur { background: var(--accent); color: #fff; border-color: var(--accent); }
+/* 記事一覧の抜粋＋代表画像 */
+.post-excerpt { display: flex; gap: 20px; align-items: flex-start; }
+.post-excerpt p { flex: 1; margin: 0; line-height: 1.8; }
+.post-excerpt .more { white-space: nowrap; margin-left: .3em; font-size: .9rem; }
+.post-thumb { flex: 0 0 200px; }
+.post-thumb img { display: block; width: 200px; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px; border: 1px solid var(--line); }
+@media (max-width: 600px) {
+  .post-excerpt { flex-direction: column-reverse; }
+  .post-thumb, .post-thumb img { width: 100%; flex-basis: auto; }
+  .post-thumb img { aspect-ratio: 16 / 9; }
+}
