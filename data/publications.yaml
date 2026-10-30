@@ -16,11 +16,12 @@
 - date: "2026-10"
   authors: Momo Kumano, Ken Tobioka and Takehiro Yamamoto
   title: Impact of Response Length on Nugget-Level Stance Distribution in Conversational Search
-  venue: Proceedings of the 13th International Conference on Behavioural and Social Computing (BESC 2026), to appear, October 2026.
+  venue: Proceedings of the 13th International Conference on Behavioural and Social Computing (BESC 2026), pp.182-201, October 2026.
+  award: Best Student Paper Award
 - date: "2026-10"
   authors: Rui Yonemura, Kanako Nakai and Takehiro Yamamoto
   title: Correction and Supplementary Text Generation for Output-Based Learning Using Speaker Claim Extraction and RAG
-  venue: Proceedings of the 13th International Conference on Behavioural and Social Computing (BESC 2026), to appear, October 2026.
+  venue: Proceedings of the 13th International Conference on Behavioural and Social Computing (BESC 2026), pp.580-597, October 2026.
 - date: "2026-07"
   authors: Taiga Sasaki, Takehiro Yamamoto, Hiroaki Ohshima and Sumio Fujita
   title: Model Merging as an Alternative to Fine-Tuning on Combined Data for a Multi-Domain Dense Retriever
