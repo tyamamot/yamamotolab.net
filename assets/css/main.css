@@ -157,3 +157,15 @@ body { overflow-x: hidden; }
 .intro h1 { margin: 0; font-size: 2rem; line-height: 1.3; }
 .intro .hero-tagline { color: var(--accent); }
 .intro { padding-bottom: 8px; }
+
+/* 記事内の写真キャプション（{{< figure caption="..." >}}） */
+.content figure { margin: 1.2em 0; }
+.content figcaption { color: var(--muted); font-size: .85rem; text-align: center; margin-top: 4px; }
+.content figcaption h4 { font-size: inherit; font-weight: normal; margin: 0; }
+.content figcaption p { margin: 0; }
+
+/* 写真の横並び（<div class="photo-row">…</div>）。各写真の flex に縦横比を指定すると高さがそろう */
+.photo-row { display: flex; gap: 12px; align-items: flex-start; margin: 1.2em 0; }
+.photo-row > div { min-width: 0; }
+.photo-row figure { margin: 0; }
+@media (max-width: 600px) { .photo-row { display: block; } .photo-row > div + div { margin-top: 1.2em; } }
